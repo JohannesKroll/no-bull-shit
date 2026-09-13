@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#2442ed" />
+    <meta
+      name="description"
+      content="Good software. Zero bullshit. Discover 20 open-source projects and practical alternatives to the software you want to leave behind."
+    />
+    <link rel="canonical" href="https://www.no-bullshit-services.com/" />
+    <meta
+      property="og:title"
+      content="No Bullshit Services — Take back your digital life."
+    />
+    <meta
+      property="og:description"
+      content="A handpicked collection of open-source alternatives. Real projects. Honest trade-offs. Your choice."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.no-bullshit-services.com/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>No Bullshit Services — Good software. Zero bullshit.</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#projects">Skip to projects</a>
+    <header class="site-header wrap">
+      <a class="brand" href="#" aria-label="No Bullshit Services home"
+        ><img class="brand-mark" src="/brand-mark.svg" alt="" width="52" height="52" /><span class="brand-name">NO BULLSHIT<span class="brand-sub">SERVICES</span></span></a
+      >
+      <nav aria-label="Main navigation">
+        <a href="#projects">The good stuff</a
+        ><a href="#why-open-source">Why open source?</a
+        ><a href="#get-involved"
+          >Get involved <span aria-hidden="true">↗</span></a
+        >
+      </nav>
+      <a class="header-cta" href="#switch"
+        >Find your alternative <span aria-hidden="true">↗</span></a
+      >
+    </header>
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-inner wrap">
+          <div class="hero-kicker"><span>AN INDEPENDENT GUIDE TO DIGITAL FREEDOM</span><span>VOL. 001 / OPEN TO EVERYONE</span></div>
+          <div class="hero-headline">
+            <h1 id="hero-title"><span class="headline-top">GOOD SOFTWARE.</span><span class="headline-bottom">ZERO <span class="bullshit-cutout">BULLSHIT.</span></span></h1>
+            <div class="trial-sticker" aria-label="Your life is not a free trial"><span>YOUR LIFE</span><strong>IS NOT A<br>FREE TRIAL.</strong><svg viewBox="0 0 100 20" aria-hidden="true"><path d="M3 9Q25 0 48 10T97 7M7 17L95 13"/></svg></div>
+          </div>
+          <div class="hero-bottom">
+            <div class="hero-copy"><p><strong>Your files. Your devices. Your rules.</strong><br>Discover open-source alternatives that put you back in control of your digital life.</p><div class="hero-footnote">OPEN CODE. REAL CHOICE. NO SALES PITCH.</div></div>
+            <span class="hero-scribble" aria-hidden="true"><svg viewBox="0 0 170 100"><path d="M5 19C75 1 29 94 88 62S128 25 149 62M113 59L151 66 145 30"/></svg></span>
+            <div class="hero-actions"><a class="button primary" href="#projects">Explore the good stuff <span aria-hidden="true">↘</span></a><a class="quiet-link" href="#why-open-source">Wait. What’s open source? <span aria-hidden="true">↓</span></a></div>
+          </div>
+          <div class="hero-edge" aria-hidden="true"></div>
+        </div>
+      </section>
+      <div class="manifesto-strip">
+        <div class="wrap">
+          <span><b>↗</b> OPEN CODE</span><span><b>✳</b> REAL OWNERSHIP</span
+          ><span><b>↗</b> COMMUNITY POWERED</span
+          ><span><b>✳</b> FREEDOM TO TINKER</span
+          ><span class="strip-last"><b>↗</b> BETTER TOGETHER</span>
+        </div>
+      </div>
+      <section
+        id="projects"
+        class="projects-section wrap"
+        aria-labelledby="projects-title"
+      >
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">01 / THE OPEN-SOURCE SHORTLIST</div>
+            <h2 id="projects-title">THE GOOD STUFF.</h2>
+          </div>
+          <p>
+            Big impact. Everyday usefulness.<br />Handpicked projects worth
+            knowing about.
+          </p>
+        </div>
+        <div class="directory-controls">
+          <div
+            class="filters"
+            role="group"
+            aria-label="Filter projects by category"
+          ></div>
+          <label class="search-box"
+            ><svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="10.5" cy="10.5" r="6.5" />
+              <path d="m16 16 5 5" /></svg
+            ><input
+              id="project-search"
+              type="search"
+              placeholder="Find your next switch…"
+              aria-label="Search projects or proprietary alternatives"
+          /></label>
+        </div>
+        <div class="results-line">
+          <span id="result-count" role="status" aria-live="polite"></span
+          ><span>Independently curated. No paid placements.</span>
+        </div>
+        <div id="project-grid" class="project-grid"></div>
+        <div id="empty-state" class="empty-state" hidden>
+          <span>¯\_(ツ)_/¯</span>
+          <h3>No matches. No nonsense.</h3>
+          <p>Try “office”, “Windows”, or another category.</p>
+          <button class="button secondary" id="clear-search">
+            Clear filters
+          </button>
+        </div>
+        <div class="browse-more">
+          <button class="button secondary" id="show-all">
+            Meet all 20 projects <span aria-hidden="true">↓</span>
+          </button>
+          <p>
+            A starting point, not a popularity contest.
+            <button class="text-button" id="methodology-button">
+              How we pick ↗
+            </button>
+          </p>
+        </div>
+      </section>
+      <section
+        id="switch"
+        class="switch-section wrap"
+        aria-labelledby="switch-title"
+      >
+        <div class="switch-copy">
+          <div class="eyebrow">02 / THE EXIT DOOR IS RIGHT HERE</div>
+          <h2 id="switch-title">There’s an alternative<br />for that.</h2>
+          <p>
+            Start with one app. You don’t have to<br />change your whole life by
+            Tuesday.
+          </p>
+        </div>
+        <div class="switch-finder">
+          <label for="replace-select">I’m looking for an alternative to…</label>
+          <div class="select-wrap">
+            <select id="replace-select">
+              <option value="Microsoft 365">Microsoft 365</option>
+              <option value="Google Drive">Google Drive / Dropbox</option>
+              <option value="Plex">Plex / Emby</option>
+              <option value="Windows">Windows / macOS</option>
+              <option value="Android">Google’s Android experience</option>
+              <option value="Photoshop">Adobe Photoshop</option>
+              <option value="Illustrator">Adobe Illustrator</option>
+              <option value="Maya">Autodesk Maya</option>
+              <option value="Chrome">Google Chrome</option>
+              <option value="LastPass">LastPass / 1Password</option>
+              <option value="WhatsApp">WhatsApp</option>
+              <option value="Outlook">Outlook</option></select
+            ><span aria-hidden="true">⌄</span>
+          </div>
+          <div
+            class="switch-result"
+            id="switch-result"
+            aria-live="polite"
+          ></div>
+        </div>
+      </section>
+      <section
+        id="why-open-source"
+        class="why-section wrap"
+        aria-labelledby="why-title"
+      >
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">03 / OPEN SOURCE, HUMAN EXPLAINED</div>
+            <h2 id="why-title">Software with the doors open.</h2>
+          </div>
+          <a
+            class="quiet-link"
+            href="https://opensource.org/osd"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Read the open-source definition ↗</a
+          >
+        </div>
+        <p class="why-intro">
+          Open source means the code comes with permission to use, study,
+          change, and share it. You can see how it works—and help make it
+          better.
+        </p>
+        <div class="principles">
+          <article>
+            <span class="principle-icon">&lt;/&gt;</span
+            ><span class="number">01</span>
+            <h3>Look under the hood.</h3>
+            <p>
+              The code is available for inspection. Transparency makes
+              independent review possible; it isn’t a magic security guarantee.
+            </p>
+          </article>
+          <article>
+            <span class="principle-icon">↗</span><span class="number">02</span>
+            <h3>Keep your options open.</h3>
+            <p>
+              Modify your tools, choose where to run them, and look for open
+              formats that make your next move easier.
+            </p>
+          </article>
+          <article>
+            <span class="principle-icon">✳</span><span class="number">03</span>
+            <h3>People make it happen.</h3>
+            <p>
+              Volunteers, nonprofits, and businesses build together. Good
+              software grows when people contribute time, care, and funding.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="honest-section wrap">
+        <div>
+          <span class="eyebrow"
+            >A LITTLE FINE PRINT. IN NORMAL-SIZED TYPE.</span
+          >
+          <h2>Free as in freedom.<br />Sometimes also as in beer.</h2>
+        </div>
+        <div>
+          <p>
+            Open source doesn’t mean zero costs, perfect privacy, or a one-click
+            replacement for everything. Hosting, support, and some features can
+            cost money. Switching can take a little patience.
+          </p>
+          <p>
+            That’s why every project here comes with a practical heads-up.
+            Better choices start with the whole picture.
+          </p>
+        </div>
+      </section>
+      <section id="get-involved" class="involve-section wrap">
+        <div class="eyebrow">04 / YOU DON’T NEED TO BE A DEVELOPER</div>
+        <h2>Good things don’t<br />build themselves.<span>✳</span></h2>
+        <div class="involve-bottom">
+          <p>
+            Try a project. Report a bug. Translate a sentence.<br />Donate a
+            coffee. Tell a friend. It all counts.
+          </p>
+          <a
+            class="button primary"
+            href="https://opensource.guide/how-to-contribute/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Find your way to contribute <span aria-hidden="true">↗</span></a
+          >
+        </div>
+      </section>
+      <section class="faq-section wrap" aria-label="Frequently asked questions">
+        <h2>FAIR QUESTIONS.</h2>
+        <details>
+          <summary>
+            Do I need to know how to code?<span aria-hidden="true">+</span>
+          </summary>
+          <p>
+            No. Desktop apps like LibreOffice, Firefox, and VLC install like
+            other apps. Running your own Nextcloud or Jellyfin server takes more
+            setup. Each project’s details explain the starting point.
+          </p>
+        </details>
+        <details>
+          <summary>
+            Can I keep using Windows or macOS?<span aria-hidden="true">+</span>
+          </summary>
+          <p>
+            Absolutely. Many of these apps work on both. You can start with a
+            browser or office suite and explore Linux later, if you want to.
+          </p>
+        </details>
+        <details>
+          <summary>
+            How did you choose these projects?<span aria-hidden="true">+</span>
+          </summary>
+          <p>
+            This is an editorial shortlist based on everyday usefulness, breadth
+            of capability, community relevance, and impact on software
+            development. It is not a measured global ranking. Descriptions were
+            checked against official project sources in September 2026; every
+            project links to its source.
+          </p>
+        </details>
+        <details>
+          <summary>
+            Is this site affiliated with these projects?<span aria-hidden="true"
+              >+</span
+            >
+          </summary>
+          <p>
+            No. This is an independent discovery site, with no paid placements
+            or affiliate links. Project names and logos belong to their
+            respective owners. We don’t run or provide support for the listed
+            services.
+          </p>
+        </details>
+      </section>
+    </main>
+    <footer class="wrap">
+      <a class="brand" href="#"
+        ><img class="brand-mark" src="/brand-mark.svg" alt="" width="52" height="52" /><span class="brand-name">NO BULLSHIT<span class="brand-sub">SERVICES</span></span></a
+      >
+      <p>A small corner of the internet.<br />A little more freedom.</p>
+      <div>
+        <span>Independent by design.</span
+        ><button id="privacy-button" class="text-button">
+          Privacy & site notes ↗
+        </button>
+      </div>
+      <a class="back-top" href="#" aria-label="Back to top">↑</a>
+    </footer>
+    <dialog id="project-dialog" aria-labelledby="dialog-title">
+      <button class="dialog-close" aria-label="Close dialog">×</button>
+      <div id="dialog-content"></div>
+    </dialog>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
