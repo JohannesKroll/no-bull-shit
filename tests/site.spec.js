@@ -91,9 +91,7 @@ test("layout, local assets, and accessibility", async ({ page }, testInfo) => {
     path: testInfo.outputPath("homepage.png"),
     fullPage: true,
   });
-  await page
-    .getByRole("button", { name: "Explore /e/OS", exact: true })
-    .click();
+  await page.getByRole("link", { name: "Explore /e/OS", exact: true }).click();
   const modalResults = await new AxeBuilder({ page })
     .withTags(["wcag2a", "wcag2aa", "wcag21aa"])
     .analyze();

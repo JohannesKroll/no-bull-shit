@@ -3,3 +3,5 @@ dist/
 .firebase/
 *.local
 test-results/
+firebase-debug*.log
+playwright-report/
